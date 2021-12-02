@@ -35,7 +35,7 @@ import ReactDOM from "react-dom";
     const [data, setData] = useState([{id_area:'',nombre_usuario:''}]);
 
     const getAreas = async() => {
-        const areas = await axios(`http://127.0.0.1:5000/getAreas`,{
+        const areas = await axios(`http://10.13.18.84:5000/getAreas`,{
             headers: {
               'Content-Type': 'application/json',
               'Authorization': `Bearer `+token
