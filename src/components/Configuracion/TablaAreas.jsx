@@ -226,7 +226,7 @@ import ReactDOM from "react-dom";
               <TableHead>
                 <TableRow>
                   <TableCell>
-                    Nombre
+                    Nombre1
                   </TableCell>
                   <TableCell>
                     Acciones
