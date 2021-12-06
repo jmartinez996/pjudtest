@@ -75,7 +75,7 @@ export default function Tablatribunales() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .post(`http://127.0.0.1:5000/deleteTribunal/`, f, {
+          .post(`http://10.13.18.84:5000/deleteTribunal/`, f, {
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ` + token,

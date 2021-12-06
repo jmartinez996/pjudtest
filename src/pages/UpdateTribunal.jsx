@@ -74,7 +74,7 @@ function UpdateTribunal() {
     const [tribunal, setTribu] = useState([]);
     const [sArea, setSArea] = useState([]);
     const getAreas = async() => {
-        const areas = await axios(`http://127.0.0.1:5000/getAreas`,{
+        const areas = await axios(`http://10.13.18.84:5000/getAreas`,{
             headers: {
               'Content-Type': 'application/json',
               'Authorization': `Bearer `+token
@@ -92,20 +92,6 @@ function UpdateTribunal() {
         //getTribunal();
     }, []);
     
-    // const getTribunal = async () => {
-    //     console.log(id);
-    //     const token = window.localStorage.getItem('robo-jwt-token')
-    //     const f = new FormData();
-    //     f.append("id", id);
-    //     const tribun = await axios.post(`http://127.0.0.1:5000/getTribunalId`, f, {
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //           'Authorization': `Bearer `+token
-    //         }}).then(res=>{
-    //             console.log(res.data);
-    //             setTribu(res.data);
-    //         })
-    // }
     const [state, setState] = React.useState({
         checkedA: true,
       });

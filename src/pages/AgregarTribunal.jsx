@@ -107,7 +107,7 @@ function AgregarTribunal() {
           reverseButtons: true
         }).then((result) => {
           if (result.isConfirmed) {
-            axios.post(`http://127.0.0.1:5000/createTribunal/`, f, {
+            axios.post(`http://10.13.18.84:5000/createTribunal/`, f, {
               headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer `+token
